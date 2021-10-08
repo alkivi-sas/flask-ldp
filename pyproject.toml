@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+dist-name = "Flask-LDP"
+module = "flask_ldp"
+author = "Alkivi"
+author-email = "anthony@alkivi.fr"
+home-page = "https://github.com/alkivi/flask-ldp"
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+requires-python = ">=3.5"
+requires = ["Flask", "logging-ldp"]
+maintainer = "Anthony Martinet"
+maintainer-email = "anthony@alkivi.fr"
+description-file = "README.md"

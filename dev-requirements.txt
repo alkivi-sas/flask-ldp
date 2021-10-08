@@ -1,0 +1,6 @@
+black
+Flask
+flit
+logging-ldp
+pylint
+rope
