@@ -7,7 +7,7 @@ dist-name = "Flask-LDP"
 module = "flask_ldp"
 author = "Alkivi"
 author-email = "anthony@alkivi.fr"
-home-page = "https://github.com/alkivi/flask-ldp"
+home-page = "https://github.com/alkivi-sas/flask-ldp"
 classifiers = [
     "Environment :: Web Environment",
     "Intended Audience :: Developers",

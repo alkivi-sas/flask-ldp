@@ -11,7 +11,7 @@ from logging_ldp.schemas import LDPSchema
 from marshmallow import fields
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 class DefaultLoggingkSchema(LDPSchema):
@@ -91,11 +91,11 @@ class LDP(logging.Logger):
 
         extra = kwargs.get('extra', {})
 
-        if 'add_flask' in kwargs:
+        if 'add_flask' in kwargs and kwargs['add_flask']:
             extra['flask'] = {"endpoint": str(request.endpoint).lower(), "view_args": request.view_args}
             del kwargs['add_flask']
 
-        if 'add_request' in kwargs:
+        if 'add_request' in kwargs and kwargs['add_request']:
             extra['request'] = {
                 "content_length": request.environ.get("CONTENT_LENGTH"),
                 "content_type": request.environ.get("CONTENT_TYPE"),
